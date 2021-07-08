@@ -1,6 +1,5 @@
 # James William Fletcher - June 2021
 #   - NPOW POC #3
-import json
 import numpy as np
 import os
 import tensorflow as tf
@@ -145,12 +144,6 @@ st = time_ns()
 model.fit(in_td, out_td, epochs=training_iterations, batch_size=batches)
 timetaken = (time_ns()-st)/1e+9
 print("Time Taken:", "{:.2f}".format(timetaken), "seconds")
-
-# save model
-# f = open("nnm/model.txt", "w")
-# if f:
-#     f.write(model.to_json())
-# f.close()
 
 # save weights
 # model.save_weights("nnm/weights.h5")
