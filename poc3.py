@@ -115,7 +115,7 @@ for i, a in enumerate(ins):
     in_td.append(temp)
 
 out_td = []
-for i, a in enumerate(ins):
+for i, a in enumerate(outs):
     temp = []
     for i, b in enumerate(a):
         temp.append(toEmbed(b))
