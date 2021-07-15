@@ -125,7 +125,7 @@ for x in range(total_hashes):
         ps.append(fromEmbed(c))
 
     if ps is not None:
-        exp = ins[x].upper()
+        exp = outs[x].upper()
         prd = ''.join(ps)
         print(x, "expected ", exp)
         print(x, "predicted", prd)
