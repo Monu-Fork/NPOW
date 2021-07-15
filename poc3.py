@@ -172,7 +172,7 @@ for x in range(total_hashes):
         ps.append(fromEmbed(c)) # would be faster to skip this step and do the comparisons as embeddings with tolerances
 
     if ps is not None:
-        exp = ins[x].upper()
+        exp = outs[x].upper()
         prd = ''.join(ps)
         if(exp == prd):
             success += 1
